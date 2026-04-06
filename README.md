@@ -1,7 +1,10 @@
-# Python-files
 # Python Quiz Game
-A simple console-based quiz game built with Python.
+A simple command-line quiz game built using Python.
 
-## How to run
-1. Download `Quiz.py`
-2. Run `Quiz.py` in your terminal.
+## Features
+- Multiple questions
+- Score tracking
+- User input handling
+
+## Tech Used
+- Python
