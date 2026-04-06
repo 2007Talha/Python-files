@@ -5,6 +5,7 @@ a=input("Do you want to play? YES/NO\n")
 if (a=="yes" or a=="Yes" or a=="YES"):
     print("Here is your question::\n")
     forq,ans in list:
+        print(q)
         c=str(input("ANS:")
         if c.lower()==ans:
             S=S+1
