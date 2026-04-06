@@ -22,27 +22,25 @@ while(a=="YES" or a=="Yes" or a=="yes"):
     elif b==5:
         d= "central processing unit"
     elif b==6:
-        d="8"
+        d="pirates of the Caribbean"
     elif b==7:
-        d= "pirates of the caribbean"
-    elif b==8:
         d= "skin"
-    elif b==9:
+    elif b==8:
         d= "mandarin chinese"
-    elif b==10:
+    elif b==9:
         d= "au"
-    elif b==11:
+    elif b==10:
         d= "milky way"
-    elif b==12:
+    elif b==11:
         d= "4 years"
-    elif b==13:
+    elif b==12:
         d= "japan"
-    elif b==14:
+    elif b==13:
         d= "cheetah"
     if c.lower()==d:
         S=S+1
         print("YOUR ANSWER IS CORRECT YOUR SCORE IS:",S)
-        list=list.pop(b)
+        list.pop(b)
     else:
         print("X YOUR ANSWER IS WRONG YOUR SCORE IS:",S)
     C=input("Do you want to continue YES/NO")
