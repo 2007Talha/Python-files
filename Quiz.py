@@ -1,52 +1,22 @@
-import random
 S=0
-print("Welcome to the Quiz game !!!")
-list=["What planet is known as the Red Planet?","What is the capital of Australia?","Who was the first President of the United States?","Who wrote Romeo and Juliet?","How many players are there in a standard football (soccer) team on the field?","What does “CPU” stand for?","Which movie features the character Jack Sparrow?","What is the largest organ in the human body?","Which language has the most native speakers worldwide?","What is the chemical symbol for gold?","What galaxy do we live in?","What is the term length of a U.S. President?","Sushi is a cuisine that originated in which country?","What is the fastest land animal?"]
-a=input("Do you want to play? YES/NO")
-while(a=="YES" or a=="Yes" or a=="yes"):
-    n=len(list)
-    b=random.randint(0,n)
-    print("Here is your question::")
-    print("Q:",list[b-1])
-    c=str(input("Ans:"))
-    if b==0:
-        d= "mars"
-    elif b==1:
-        d= "canberra"
-    elif b==2:
-        d= "george wahsington"
-    elif b==3:
-        d= "willam shakespeare"
-    elif b==4:
-        d="11"
-    elif b==5:
-        d= "central processing unit"
-    elif b==6:
-        d="pirates of the Caribbean"
-    elif b==7:
-        d= "skin"
-    elif b==8:
-        d= "mandarin chinese"
-    elif b==9:
-        d= "au"
-    elif b==10:
-        d= "milky way"
-    elif b==11:
-        d= "4 years"
-    elif b==12:
-        d= "japan"
-    elif b==13:
-        d= "cheetah"
-    if c.lower()==d:
-        S=S+1
-        print("YOUR ANSWER IS CORRECT YOUR SCORE IS:",S)
-        list.pop(b)
-    else:
-        print("X YOUR ANSWER IS WRONG YOUR SCORE IS:",S)
-    C=input("Do you want to continue YES/NO")
-    if (C=="no" or C=="NO" or C=="No" or len(list)==0):
-        print("GAME OVER")
-        print("YOU SCORED",S,"/15")
-        break
-    else:
-        continue
+print("Welcome to the Quiz game !!!\n")
+list°=[("What is the capital of France?", "Paris"),("Who wrote 'Romeo and Juliet'?", "William Shakespeare"),("What is the largest planet in our solar system?", "Jupiter"),("Which element has the chemical symbol 'O'?", "Oxygen"),("What is the square root of 64?", "8"),("Who painted the Mona Lisa?", "Leonardo da Vinci"),("What is the fastest land animal?", "Cheetah"),("Which country is known as the Land of the Rising Sun?", "Japan"),("What is the boiling point of water in Celsius?", "100"),("Who discovered gravity?", "Isaac Newton"),("Which is the smallest prime number?", "2"),("What is the currency of the United Kingdom?", "Pound"),("Who is known as the Father of Computers?", "Charles Babbage"),("What gas do plants absorb from the atmosphere?", "Carbon dioxide"),("Which ocean is the largest?", "Pacific Ocean"),("What is H2O commonly known as?", "Water"),("Who was the first President of the United States?", "George Washington"),("Which planet is known as the Red Planet?", "Mars"),("What is the hardest natural substance?", "Diamond"),("Which language is primarily spoken in Brazil?", "Portuguese")]
+a=input("Do you want to play? YES/NO\n")
+if (a=="yes" or a=="Yes" or a=="YES"):
+    print("Here is your question::\n")
+    forq,ans in list:
+        c=str(input("ANS:")
+        if c.lower()==ans:
+            S=S+1
+            print("YOUR ANSWER IS CORRECT YOUR SCORE IS:\n",S)
+        else:
+            print("X YOUR ANSWER IS WRONG YOUR SCORE IS:\n",S)
+        C=input("Do you want to continue YES/NO\n")
+        if (C=="no" or C=="NO" or C=="No"):
+            print("GAME OVER")
+            print("YOU SCORED",S,"/15")
+            break
+        else:
+            continue
+else (a=="NO" or a=="no" or a=="No"):
+    break
